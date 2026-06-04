@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy --minify",
+    "whoami": "wrangler whoami --env-file ./.dev.vars",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "hono": "^4.12.23"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0"
+  }
+}
